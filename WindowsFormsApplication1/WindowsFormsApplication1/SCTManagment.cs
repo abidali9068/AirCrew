@@ -10,33 +10,31 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Form1 : MetroFramework.Forms.MetroForm
+    public partial class SCTManagment : MetroFramework.Forms.MetroForm
     {
-        public Form1()
+        public SCTManagment()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void SCTManagment_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void metroLabel1_Click(object sender, EventArgs e)
+        private void SCTManagment_FormClosing(object sender, EventArgs e)
         {
-
+            Home obj = new Home();
+            obj.Show();
+            this.Close();
         }
 
-        private void metroTile1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroButton2_Click(object sender, EventArgs e)
+        private void metroButton1_Click(object sender, EventArgs e)
         {
             this.Close();
             Home obj = new Home();
             obj.Show();
         }
+
+      
     }
 }

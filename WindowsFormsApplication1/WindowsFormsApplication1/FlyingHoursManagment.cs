@@ -10,29 +10,19 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Form1 : MetroFramework.Forms.MetroForm
+    public partial class FlyingHoursManagment  : MetroFramework.Forms.MetroForm
     {
-        public Form1()
+        public FlyingHoursManagment()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void FlyingHoursManagment_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void metroLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroTile1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroButton2_Click(object sender, EventArgs e)
+        private void metroButton1_Click(object sender, EventArgs e)
         {
             this.Close();
             Home obj = new Home();
